@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahakal Cab | Ujjain, Ratlam & Indore Taxi Service</title>
+<meta name="description" content="Mahakal Cab - Ujjain, Ratlam और Indore से local, religious और All India outstation cab service. Dzire, Ertiga और Bolero उपलब्ध।">
+<meta name="keywords" content="Mahakal Cab, Ujjain Cab, Ujjain Taxi, Ratlam Taxi, Indore Taxi, Ujjain to Omkareshwar Taxi, All India Cab">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fffaf5;color:#29201d;line-height:1.6}
+.top{background:#71180f;color:#fff;text-align:center;padding:8px;font-size:14px}
+nav{padding:15px 6%;display:flex;justify-content:space-between;align-items:center;background:#fff;box-shadow:0 2px 10px #0002;position:sticky;top:0;z-index:5}
+.logo{font-size:25px;font-weight:800;color:#8b1e14}.logo span{color:#d28a18}
+nav a{margin-left:15px;text-decoration:none;color:#6f160f;font-weight:bold}
+.hero{background:linear-gradient(135deg,#7b160f,#b54a17);color:#fff;padding:65px 7%}
+.hero h1{font-size:46px;line-height:1.1;margin:10px 0}.hero p{font-size:19px;max-width:700px}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;font-weight:bold;margin:6px;text-decoration:none}
+.primary{background:#f5b942;color:#35180e}.white{background:#fff;color:#75170f}
+.booking{background:#fff;color:#29201d;padding:24px;border-radius:15px;max-width:460px;margin-top:25px}
+.booking input{width:100%;padding:12px;margin:6px 0;border:1px solid #ddd;border-radius:7px}
+section{max-width:1100px;margin:auto;padding:55px 6%}h2{text-align:center;font-size:32px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;padding:22px;border-radius:14px;box-shadow:0 4px 18px #0001}
+footer{background:#281714;color:#fff;padding:35px 7%}
+@media(max-width:700px){.hero h1{font-size:36px}.grid{grid-template-columns:1fr}nav a{display:none}}
+</style>
+</head>
+<body>
+<div class="top">🙏 जय श्री महाकाल | Ujjain • Ratlam • Indore • All India Cab Service</div>
+<nav>
+<div class="logo">Mahakal <span>Cab</span> 🚕</div>
+<div><a href="#services">Services</a><a href="#cars">Cars</a><a href="#booking">Booking</a></div>
+</nav>
+
+<section class="hero">
+<h1>आपकी यात्रा, हमारी जिम्मेदारी।</h1>
+<p>Ujjain, Ratlam और Indore से लोकल, धार्मिक यात्रा, आउटस्टेशन और पूरे भारत के लिए कैब सेवा।</p>
+<a class="btn primary" href="#booking">🚕 Cab Book करें</a>
+<a class="btn white" href="tel:+916264296197">📞 6264296197</a>
+
+<div class="booking" id="booking">
+<h2 style="text-align:left">Quick Booking</h2>
+<form onsubmit="sendBooking(event)">
+<input id="name" required placeholder="आपका नाम">
+<input id="pickup" required placeholder="Pickup Location">
+<input id="drop" required placeholder="Drop Location">
+<input id="date" type="date">
+<button class="btn primary" type="submit" style="border:0;cursor:pointer">💬 WhatsApp पर Booking भेजें</button>
+</form>
+</div>
+</section>
+
+<section id="services">
+<h2>हमारी सेवाएँ</h2>
+<div class="grid">
+<div class="card">🛕<h3>Mahakal Darshan</h3><p>उज्जैन एवं आसपास के धार्मिक स्थलों के लिए कैब।</p></div>
+<div class="card">🛣️<h3>Outstation Taxi</h3><p>One-way और round-trip cab पूरे भारत के लिए।</p></div>
+<div class="card">✈️<h3>Airport Transfer</h3><p>Indore Airport सहित pickup और drop सुविधा।</p></div>
+</div>
+</section>
+
+<section id="cars">
+<h2>हमारी गाड़ियाँ</h2>
+<div class="grid">
+<div class="card"><h3>Maruti Dzire</h3><p>Comfortable sedan — family और business travel.</p></div>
+<div class="card"><h3>Maruti Ertiga</h3><p>Family/group travel के लिए spacious car.</p></div>
+<div class="card"><h3>Mahindra Bolero</h3><p>Long-distance और practical travel के लिए।</p></div>
+</div>
+</section>
+
+<section>
+<h2>Popular Travel</h2>
+<div class="grid">
+<div class="card">Ujjain ↔ Omkareshwar</div>
+<div class="card">Ujjain ↔ Indore</div>
+<div class="card">Ujjain ↔ Maheshwar</div>
+<div class="card">Ujjain ↔ Ahmedabad</div>
+<div class="card">Ujjain ↔ Dwarka / Somnath</div>
+<div class="card">All India Outstation</div>
+</div>
+</section>
+
+<footer>
+<h2 style="text-align:left;color:#f5b942">Mahakal Cab</h2>
+<p>📍 Pickup: Ujjain / Ratlam / Indore</p>
+<p>📞 <a href="tel:+916264296197" style="color:white">6264296197</a></p>
+<p>💬 WhatsApp Booking: 6264296197</p>
+<p>जय श्री महाकाल 🙏</p>
+</footer>
+
+<script>
+function sendBooking(e){
+e.preventDefault();
+const name=document.getElementById('name').value;
+const pickup=document.getElementById('pickup').value;
+const drop=document.getElementById('drop').value;
+const date=document.getElementById('date').value;
+const msg=`Namaste Mahakal Cab!%0AName: ${encodeURIComponent(name)}%0APickup: ${encodeURIComponent(pickup)}%0ADrop: ${encodeURIComponent(drop)}%0ADate: ${encodeURIComponent(date)}`;
+window.open('https://wa.me/916264296197?text='+msg,'_blank');
+}
+</script>
+</body>
+</html>
